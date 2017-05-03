@@ -2,6 +2,23 @@
  * Clases reutilizables para el proyecto
  * (Aquí pueden ir las clases de tu grid)
  */
+ *{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ .container{
+   width: 100%;
+   max-width: 1200px;
+   margin: 0px auto;
+ }
+ .row:before, .row:after{
+ content:"";
+ display: table;
+ }
+ .row:after{
+   clear: both;
+ }
 
 .mb-0 {
   margin-bottom: 0;
@@ -13,4 +30,44 @@
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.color-text {
+  color: white;
+}
+
+[class*="col-"]{
+  min-height: 7px;
+  padding: 5px;
+  float: left;
+}
+
+.col-1 {
+  /* (1/12)*100 */
+  width: 8.333%;
+}
+
+.col-2 {
+  /* (2/12)*100 */
+  width: 16.666%;
+}
+
+.col-3 {
+  /* (3/12)*100 */
+  width: 25%;
+}
+
+.col-4 {
+  /* (4/12)*100 */
+  width: 33.333%;
+}
+
+.col-5 {
+  /* (5/12)*100 */
+  width: 41.666%;
+}
+
+.col-12 {
+  /* (12/12)*100 */
+  width: 100%
 }
