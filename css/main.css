@@ -23,12 +23,30 @@ body {
   background-color: #fff;
 }
 
-img {
-  vertical-align: middle;
+header{
+  position: fixed;
+  background: white;
+  width: 100%;
+  top: 0;
 }
 
-a {
+.logo{
+  float: right;
+  width: 60px;
+  margin-right: 150px;
+}
+
+.link{
   color: #373B47;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 21px;
+  display:inline-block;
+  position: relative;
+  left: 70px;
+}
+
+a{
   text-decoration: none;
 }
 
@@ -38,24 +56,69 @@ a:hover {
 
 #home {
   background: url("../assets/images/bg-home.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 554px;
   text-align: center;
+  color: white;
+  height: 550px;
   margin-top: 80px;
 }
 
-.text-home{
-  font-size: 50px;  
+.text-home1{
+  font-weight: 30px;
+  margin-top: 70px;
+}
+
+.text-home2{
+  font-size: 45px;
+  margin-top: 65px;
+}
+
+.text-hom3{
+  font-size:
+}
+
+.boton{
+  margin-top: 120px;
 }
 
 .green-btn {
   background: #2ECC71;
   color: #fff;
-  padding: 11px 20px;
-  border-radius: 1px;
-  font-weight: 500;
+  padding: 15px 40px;
+  border-radius: 3px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-weight: 200px;
+  margin-right: 50px;
+}
+
+#services{
+  background-color: #F17C72;
+  text-align: center;
+  color: #FFF;
+  padding: 70px 7px;
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+}
+
+.box-services{
+  display: inline-block;
+  width: 30%;
+  margin-top: 63px;
+}
+
+.text-services{
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+footer{
+  text-align: center;
+  height: 70px;
+  background: #373B47;
+  color: white;
+  padding-top: 7px;
 }
